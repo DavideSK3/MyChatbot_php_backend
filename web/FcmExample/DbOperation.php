@@ -272,7 +272,7 @@ class DbOperation
             ) AS distance
             FROM restaurants
             ORDER BY distance
-            LIMIT 5;");
+            LIMIT 6;");
         $stmt->bind_param("sss",$lat,$lon,$lat);
         $stmt->execute();
         $result = $stmt->get_result();
