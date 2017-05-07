@@ -1,0 +1,49 @@
+CREATE TABLE restaurants (
+	NOME varchar(100),
+	DESCRIZIONE varchar(500), 
+	ENGLISH_DESCRIPTION varchar(500),
+	CATEGORIA varchar(50),
+	LATITUDINE varchar(20),
+	LONGITUDINE varchar(20),
+	VIA varchar(50),
+	NUMBER varchar(10),
+	CAP varchar(10),
+	CITTA varchar(20),
+	CONTATTO_NOME varchar(100) DEFAULT "",
+	CONTATTO_TELEFONO varchar(100) DEFAULT "",
+	CONTATTO_EMAIL varchar(100) DEFAULT "",
+	CONTATTO_FAX varchar(100) DEFAULT "",
+	CONTATTO_URL varchar(100) DEFAULT "",
+	ID int(11) PRIMARY KEY AUTO_INCREMENT
+)
+
+
+
+	ORARI varchar(100),
+	SERVIZI varchar(100),
+	PREZZI varchar(100),
+	TAG1 varchar(100),
+	TAG2 varchar(100),
+	TAG3 varchar(100),
+	TAG4 varchar(100),
+	TAG5 varchar(100),
+	CAPIENZA varchar(10),
+	STORIA varchar(100),
+	CURIOSITA varchar(100),
+	COME_ARRIVARE varchar(100),
+	ACCESSIBILITA varchar(100)
+)
+
+
+LOAD data local infile "C:\\Users\\david\\Desktop\\ristoranti.csv" 
+INTO TABLE restaurants
+fields terminated by "," 
+optionally enclosed by '"'
+lines terminated by "\n"
+ignore 1 lines;
+
+
+LOAD data local infile "C:\\Users\\david\\Desktop\\out.txt" 
+INTO TABLE restaurants
+fields terminated by ','
+lines terminated by '\n';
