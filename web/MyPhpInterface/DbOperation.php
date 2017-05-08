@@ -246,7 +246,7 @@ class DbOperation
     }
 
     public function sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema){
-    	$stmt = $this->con->prepare("INSERT INTO messages (chatid,sender,content) VALUES (?,?,?,?,?,?) ");
+    	$stmt = $this->con->prepare("INSERT INTO messages (chatid,sender,content,intent,restaurant,cinema) VALUES (?,?,?,?,?,?) ");
     	$stmt->bind_param("ssssss",$chatid,$sender,$content,$intent,$restaurant,$cinema);
         if($stmt->execute()){
             $this->updateChatTime($chatid);
