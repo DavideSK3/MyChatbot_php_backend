@@ -18,6 +18,9 @@ while($message = $messages->fetch_assoc()){
 	$temp['sender']=$message['sender'];
 	$temp['content']=$message['content'];
 	$temp['time']=$message['time'];
+	$temp['intent']=$message['intent'];
+	$temp['restaurant']=$message['restaurant'];
+	$temp['cinema']=$message['cinema'];
 	array_push($response['messages'],$temp);
 }
 

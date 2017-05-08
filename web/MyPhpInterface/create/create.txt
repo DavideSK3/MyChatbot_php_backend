@@ -31,3 +31,38 @@ CREATE TABLE messages (
 	PRIMARY KEY(chatid,sender,time)
 	FOREIGN KEY(chatid,sender) REFERENCES chats(chatid,participant)
 );
+
+CREATE TABLE restaurants (
+	NOME varchar(100),
+	DESCRIZIONE varchar(500), 
+	ENGLISH_DESCRIPTION varchar(500),
+	CATEGORIA varchar(50),
+	LATITUDINE varchar(20),
+	LONGITUDINE varchar(20),
+	VIA varchar(50),
+	NUMBER varchar(10),
+	CAP varchar(10),
+	CITTA varchar(20),
+	CONTATTO_NOME varchar(100) DEFAULT "",
+	CONTATTO_TELEFONO varchar(100) DEFAULT "",
+	CONTATTO_EMAIL varchar(100) DEFAULT "",
+	CONTATTO_FAX varchar(100) DEFAULT "",
+	CONTATTO_URL varchar(100) DEFAULT "",
+	ID int(11) PRIMARY KEY AUTO_INCREMENT
+)
+
+
+ALTER TABLE messages
+ADD intent varchar(20);
+
+ALTER TABLE messages
+ADD restaurant int(11);
+
+ALTER TABLE messages
+ADD cinema int(11);
+
+ALTER TABLE messages
+ADD FOREIGN KEY (restaurant) REFERENCES restaurants(ID);
+
+ALTER TABLE messages
+ADD FOREIGN KEY (cinema) REFERENCES cinema(ID);

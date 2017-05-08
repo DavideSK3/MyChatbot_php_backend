@@ -5,10 +5,13 @@ $response = array();
 $sender = $_POST['sender'];
 $content = $_POST['content'];
 $chatid = $_POST['chatid'];
+$intent = $_POST['intent'];
+$restaurant = $_POST['restaurant'];
+$cinema = $_POST['cinema'];
 
 $db = new DbOperation(); 
 
-$result = $db->sendMessage($chatid,$sender,$content);
+$result = $db->sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema);
 
 $response = array(); 
 
