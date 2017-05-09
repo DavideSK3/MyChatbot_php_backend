@@ -278,4 +278,20 @@ class DbOperation
         $result = $stmt->get_result();
         return $result; 
     }
+
+    public function getRestaurants($lat,$lon){
+        $stmt = $this->con->prepare("SELECT ID ,NOME as NOME, VIA, NUMBER, CITTA,(
+                6371 * acos(
+                    cos(radians(?)) * cos(radians(LATITUDINE)) * cos(radians(LONGITUDINE) - radians(?))
+                    +
+                    sin(radians(?)) * sin(radians(LATITUDINE))
+                )
+            ) AS distance
+            FROM restaurants
+            ORDER BY distance;");
+        $stmt->bind_param("sss",$lat,$lon,$lat);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result; 
+    }
 }
