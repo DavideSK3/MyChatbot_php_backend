@@ -28,6 +28,9 @@ CREATE TABLE messages (
 	content text NOT NULL,
 	ismedia boolean DEFAULT FALSE,
 	time timestamp NOT NULL,
+	intent varchar(20),
+	restaurant int(11),
+	restaurant int(11),
 	PRIMARY KEY(chatid,sender,time)
 	FOREIGN KEY(chatid,sender) REFERENCES chats(chatid,participant)
 );
@@ -49,7 +52,40 @@ CREATE TABLE restaurants (
 	CONTATTO_FAX varchar(100) DEFAULT "",
 	CONTATTO_URL varchar(100) DEFAULT "",
 	ID int(11) PRIMARY KEY AUTO_INCREMENT
-)
+);
+
+CREATE TABLE movies (
+	name varchar(50),
+	description varchar(200),
+	length varchar(20),
+	category varchar(50),
+	image varchar(200),
+	id int(11) PRIMARY KEY AUTO_INCREMENT
+);
+
+CREATE TABLE schedule (
+	id int(11),
+	cinema varchar(50),
+	day varchar(12),
+	hour varchar(12),
+	PRIMARY KEY (id,cinema,day,hour),
+	FOREIGN KEY(id) REFERENCES movies(id)
+);
+
+LOAD data local infile "C:\\Users\\david\\Desktop\\out.txt" 
+INTO TABLE restaurants
+fields terminated by ','
+lines terminated by '\n';
+
+LOAD data local infile "C:\\Users\\david\\Desktop\\movie.txt" 
+INTO TABLE movies
+fields terminated by ';'
+lines terminated by '\n';
+
+LOAD data local infile "C:\\Users\\david\\Desktop\\schedule.txt" 
+INTO TABLE schedule
+fields terminated by ','
+lines terminated by '\n';
 
 
 ALTER TABLE messages
@@ -60,9 +96,3 @@ ADD restaurant int(11);
 
 ALTER TABLE messages
 ADD cinema int(11);
-
-ALTER TABLE messages
-ADD FOREIGN KEY (restaurant) REFERENCES restaurants(ID);
-
-ALTER TABLE messages
-ADD FOREIGN KEY (cinema) REFERENCES cinema(ID);
