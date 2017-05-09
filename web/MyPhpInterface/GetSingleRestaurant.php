@@ -2,12 +2,11 @@
 require_once 'DbOperation.php';
 $response = array(); 
 
-$lon = $_POST['lon'];
-$lat = $_POST['lat'];
+$id = $_POST['id'];
 
 $db = new DbOperation(); 
 
-$restaurants = $db->suggestRestaurant($lat,$lon);
+$restaurants = $db->getSingleRestaurant($id);
 
 $response = array(); 
 
@@ -27,7 +26,6 @@ while($restaurant = $restaurants->fetch_assoc()){
 	$temp['phone']=$restaurant['CONTATTO_TELEFONO'];
 	$temp['email']=$restaurant['CONTATTO_EMAIL'];
 	$temp['url']=$restaurant['CONTATTO_URL'];
-	$temp['distance']=$restaurant['distance'];
 	array_push($response['restaurants'],$temp);
 }
 

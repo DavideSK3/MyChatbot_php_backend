@@ -263,7 +263,7 @@ class DbOperation
     }
 
     public function suggestRestaurant($lat,$lon){
-        $stmt = $this->con->prepare("SELECT NOME as NOME, ENGLISH_DESCRIPTION, CATEGORIA, LATITUDINE, LONGITUDINE, VIA, NUMBER, CAP, CITTA, CONTATTO_TELEFONO, CONTATTO_EMAIL, CONTATTO_URL,(
+        $stmt = $this->con->prepare("SELECT ID,NOME as NOME, ENGLISH_DESCRIPTION, CATEGORIA, LATITUDINE, LONGITUDINE, VIA, NUMBER, CAP, CITTA, CONTATTO_TELEFONO, CONTATTO_EMAIL, CONTATTO_URL,(
                 6371 * acos(
                     cos(radians(?)) * cos(radians(LATITUDINE)) * cos(radians(LONGITUDINE) - radians(?))
                     +
@@ -274,6 +274,16 @@ class DbOperation
             ORDER BY distance
             LIMIT 5;");
         $stmt->bind_param("sss",$lat,$lon,$lat);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result; 
+    }
+
+    public function getSingleRestaurant($id){
+        $stmt = $this->con->prepare("SELECT ID, NOME as NOME, ENGLISH_DESCRIPTION, CATEGORIA, LATITUDINE, LONGITUDINE, VIA, NUMBER, CAP, CITTA, CONTATTO_TELEFONO, CONTATTO_EMAIL, CONTATTO_URL,
+                                    FROM restaurants
+                                    WHERE ID=?");
+        $stmt->bind_param("s",$id);
         $stmt->execute();
         $result = $stmt->get_result();
         return $result; 
