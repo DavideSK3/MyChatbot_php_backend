@@ -280,7 +280,7 @@ class DbOperation
     }
 
     public function getSingleRestaurant($id){
-        $stmt = $this->con->prepare("SELECT ID, NOME as NOME, ENGLISH_DESCRIPTION, CATEGORIA, LATITUDINE, LONGITUDINE, VIA, NUMBER, CAP, CITTA, CONTATTO_TELEFONO, CONTATTO_EMAIL, CONTATTO_URL,
+        $stmt = $this->con->prepare("SELECT ID, NOME as NOME, ENGLISH_DESCRIPTION, CATEGORIA, LATITUDINE, LONGITUDINE, VIA, NUMBER, CAP, CITTA, CONTATTO_TELEFONO, CONTATTO_EMAIL, CONTATTO_URL
                                     FROM restaurants
                                     WHERE ID=?");
         $stmt->bind_param("s",$id);
