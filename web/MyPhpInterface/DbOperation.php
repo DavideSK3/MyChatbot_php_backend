@@ -290,7 +290,7 @@ class DbOperation
     }
 
     public function getRestaurants($lat,$lon){
-        $stmt = $this->con->prepare("SELECT ID ,NOME as NOME, VIA, NUMBER, CITTA,(
+        $stmt = $this->con->prepare("SELECT ID ,NOME as NOME, LATITUDINE, LONGITUDINE, VIA, NUMBER, CITTA,(
                 6371 * acos(
                     cos(radians(?)) * cos(radians(LATITUDINE)) * cos(radians(LONGITUDINE) - radians(?))
                     +
