@@ -311,4 +311,20 @@ class DbOperation
         $result = $stmt->get_result();
         return $result; 
     }
+
+    public function getSingleRestaurant($id){
+        $stmt = $this->con->prepare("SELECT * FROM movies WHERE ID=?");
+        $stmt->bind_param("s",$id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result; 
+    }
+
+    public function getSchedules($id,$day){
+        $stmt = $this->con->prepare("select * from schedule where id=? and day>=? order by day, cinema limit 100;");
+        $stmt->bind_param("ss",$id,$day);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result; 
+    }
 }

@@ -2,9 +2,11 @@
 require_once 'DbOperation.php';
 $response = array(); 
 
+$id = $_POST['id'];
+
 $db = new DbOperation(); 
 
-$movies = $db->getMovies();
+$movies = $db->getSingleMovie($id);
 
 $response = array(); 
 
