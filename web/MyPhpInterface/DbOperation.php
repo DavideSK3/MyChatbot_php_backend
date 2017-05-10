@@ -304,4 +304,11 @@ class DbOperation
         $result = $stmt->get_result();
         return $result; 
     }
+
+    public function getMovies(){
+        $stmt = $this->con->prepare("SELECT * FROM movies ORDER BY name;");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result; 
+    }
 }
