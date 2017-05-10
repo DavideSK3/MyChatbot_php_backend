@@ -312,7 +312,7 @@ class DbOperation
         return $result; 
     }
 
-    public function getSingleRestaurant($id){
+    public function getSingleMovie($id){
         $stmt = $this->con->prepare("SELECT * FROM movies WHERE ID=?");
         $stmt->bind_param("s",$id);
         $stmt->execute();
