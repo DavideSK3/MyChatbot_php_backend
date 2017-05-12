@@ -22,7 +22,7 @@ class DbOperation
     }
 
     public function checkVersion($v){
-        if($version==$v){
+        if("170512_01"==$v){
             return true;
         } else {
             return false;
