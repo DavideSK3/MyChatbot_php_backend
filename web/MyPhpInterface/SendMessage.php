@@ -8,10 +8,11 @@ $chatid = $_POST['chatid'];
 $intent = $_POST['intent'];
 $restaurant = $_POST['restaurant'];
 $cinema = $_POST['cinema'];
+$image = $_POST['image'];
 
 $db = new DbOperation(); 
 
-$result = $db->sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema);
+$result = $db->sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema,$image);
 
 $response = array(); 
 

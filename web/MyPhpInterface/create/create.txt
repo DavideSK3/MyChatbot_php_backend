@@ -31,7 +31,8 @@ CREATE TABLE messages (
 	intent varchar(20),
 	restaurant int(11),
 	restaurant int(11),
-	PRIMARY KEY(chatid,sender,time)
+	image varchar(200),
+	PRIMARY KEY(chatid,sender,time),
 	FOREIGN KEY(chatid,sender) REFERENCES chats(chatid,participant)
 );
 
