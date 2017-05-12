@@ -4,6 +4,7 @@ class DbOperation
 {
     //Database connection link
     private $con;
+    private $version = "170512_01";
  
     //Class constructor
     function __construct()
@@ -18,6 +19,14 @@ class DbOperation
         //by calling the method connect of DbConnect class
         $this->con = $db->connect();
         $this->setTimezone();
+    }
+
+    public function checkVersion($v){
+        if($version==$v){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function setTimezone(){
