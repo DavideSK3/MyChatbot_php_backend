@@ -23,9 +23,9 @@
 			 $response['message'] = 'New Device registered successfully for existing account';
 		 }else{
 			 $response['error'] = true;
-			 $response['message']='Device not registered';
+			 $response['message']='Registration failed';
 		 } 
-		 
+
 	 }else {
 		$response['error'] = true; 
 		$response['message'] = 'Outdated Client Version!';
