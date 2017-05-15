@@ -22,8 +22,8 @@ class DbOperation
     }
 
     public function checkVersion($v){
-        for($x = 0; $x < $count($version); $x++) {
-        	if($version[$x]==$v){
+        foreach($version as $x) {
+        	if($x==$v){
             	return true;
             }
         } 
