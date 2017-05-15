@@ -25,7 +25,7 @@ class DbOperation
     	for($i = 1; $i <= count($version); $i++){
         	if($version[$i]=="170512_01"){
             	return true;
-            } else 
+            }
         }
         
         return false;
