@@ -4,7 +4,6 @@ class DbOperation
 {
     //Database connection link
     private $con;
-    private $version = array(1=>"170512_01",2=>"test_0",3=>"test_1",4=>"test_2",5=>"test_3",6=>"test_4",7=>"test_5",8=>"test_6");
  
     //Class constructor
     function __construct()
@@ -22,6 +21,7 @@ class DbOperation
     }
 
     public function checkVersion($v){
+    	$version = array(1=>"170512_01",2=>"test_0",3=>"test_1",4=>"test_2",5=>"test_3",6=>"test_4",7=>"test_5",8=>"test_6");
         	if($version[1]=="170512_01"){
             	return true;
             } else {
