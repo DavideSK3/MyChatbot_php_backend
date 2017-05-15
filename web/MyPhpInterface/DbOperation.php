@@ -4,7 +4,7 @@ class DbOperation
 {
     //Database connection link
     private $con;
-    private $version = array("170512_01","test_0","test_1","test_2","test_3","test_4","test_5","test_6");
+    private $version = array(1=>"170512_01",2=>"test_0",3=>"test_1",4=>"test_2",5=>"test_3",6=>"test_4",7=>"test_5",8=>"test_6");
  
     //Class constructor
     function __construct()
@@ -22,11 +22,11 @@ class DbOperation
     }
 
     public function checkVersion($v){
-        	if($version[0]=="170512_01"){
+        	if($version[1]=="170512_01"){
             	return true;
-            }
+            } else {
         
-        return false;
+        return false;}
     }
 
     public function setTimezone(){
