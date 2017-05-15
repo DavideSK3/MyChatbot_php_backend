@@ -1,0 +1,96 @@
+1,Cinema Nuova Roma,2017-05-07,23:45
+1,Cinema Nuova Roma,2017-05-14,23:45
+1,Cinema Nuova Roma,2017-05-21,23:45
+1,Cinema Nuova Roma,2017-05-28,23:45
+1,Cinema Nuova Roma,2017-06-07,23:45
+1,Cinema Nuova Roma,2017-06-14,23:45
+1,Cinema Nuova Roma,2017-06-21,23:45
+1,Cinema Nuova Roma,2017-06-28,23:45
+1,Cinema Nuova Roma,2017-07-07,23:45
+1,Cinema Nuova Roma,2017-07-14,23:45
+1,Cinema Nuova Roma,2017-07-21,23:45
+1,Cinema Nuova Roma,2017-07-28,23:45
+1,Supercinema Vittoria,2017-05-07,23:45
+1,Supercinema Vittoria,2017-05-14,23:45
+1,Supercinema Vittoria,2017-05-21,23:45
+1,Supercinema Vittoria,2017-05-28,23:45
+1,Supercinema Vittoria,2017-06-07,23:45
+1,Supercinema Vittoria,2017-06-14,23:45
+1,Supercinema Vittoria,2017-06-21,23:45
+1,Supercinema Vittoria,2017-06-28,23:45
+1,Supercinema Vittoria,2017-07-07,23:45
+1,Supercinema Vittoria,2017-07-14,23:45
+1,Supercinema Vittoria,2017-07-21,23:45
+1,Supercinema Vittoria,2017-07-28,23:45
+2,Cinema Nuova Roma,2017-05-07,23:45
+2,Cinema Nuova Roma,2017-05-14,23:45
+2,Cinema Nuova Roma,2017-05-21,23:45
+2,Cinema Nuova Roma,2017-05-28,23:45
+2,Cinema Nuova Roma,2017-06-07,23:45
+2,Cinema Nuova Roma,2017-06-14,23:45
+2,Cinema Nuova Roma,2017-06-21,23:45
+2,Cinema Nuova Roma,2017-06-28,23:45
+2,Cinema Nuova Roma,2017-07-07,23:45
+2,Cinema Nuova Roma,2017-07-14,23:45
+2,Cinema Nuova Roma,2017-07-21,23:45
+2,Cinema Nuova Roma,2017-07-28,23:45
+2,Supercinema Vittoria,2017-05-07,23:45
+2,Supercinema Vittoria,2017-05-14,23:45
+2,Supercinema Vittoria,2017-05-21,23:45
+2,Supercinema Vittoria,2017-05-28,23:45
+2,Supercinema Vittoria,2017-06-07,23:45
+2,Supercinema Vittoria,2017-06-14,23:45
+2,Supercinema Vittoria,2017-06-21,23:45
+2,Supercinema Vittoria,2017-06-28,23:45
+2,Supercinema Vittoria,2017-07-07,23:45
+2,Supercinema Vittoria,2017-07-14,23:45
+2,Supercinema Vittoria,2017-07-21,23:45
+2,Supercinema Vittoria,2017-07-28,23:45
+3,Cinema Nuova Roma,2017-05-07,23:45
+3,Cinema Nuova Roma,2017-05-14,23:45
+3,Cinema Nuova Roma,2017-05-21,23:45
+3,Cinema Nuova Roma,2017-05-28,23:45
+3,Cinema Nuova Roma,2017-06-07,23:45
+3,Cinema Nuova Roma,2017-06-14,23:45
+3,Cinema Nuova Roma,2017-06-21,23:45
+3,Cinema Nuova Roma,2017-06-28,23:45
+3,Cinema Nuova Roma,2017-07-07,23:45
+3,Cinema Nuova Roma,2017-07-14,23:45
+3,Cinema Nuova Roma,2017-07-21,23:45
+3,Cinema Nuova Roma,2017-07-28,23:45
+3,Supercinema Vittoria,2017-05-07,23:45
+3,Supercinema Vittoria,2017-05-14,23:45
+3,Supercinema Vittoria,2017-05-21,23:45
+3,Supercinema Vittoria,2017-05-28,23:45
+3,Supercinema Vittoria,2017-06-07,23:45
+3,Supercinema Vittoria,2017-06-14,23:45
+3,Supercinema Vittoria,2017-06-21,23:45
+3,Supercinema Vittoria,2017-06-28,23:45
+3,Supercinema Vittoria,2017-07-07,23:45
+3,Supercinema Vittoria,2017-07-14,23:45
+3,Supercinema Vittoria,2017-07-21,23:45
+3,Supercinema Vittoria,2017-07-28,23:45
+4,Cinema Nuova Roma,2017-05-07,23:45
+4,Cinema Nuova Roma,2017-05-14,23:45
+4,Cinema Nuova Roma,2017-05-21,23:45
+4,Cinema Nuova Roma,2017-05-28,23:45
+4,Cinema Nuova Roma,2017-06-07,23:45
+4,Cinema Nuova Roma,2017-06-14,23:45
+4,Cinema Nuova Roma,2017-06-21,23:45
+4,Cinema Nuova Roma,2017-06-28,23:45
+4,Cinema Nuova Roma,2017-07-07,23:45
+4,Cinema Nuova Roma,2017-07-14,23:45
+4,Cinema Nuova Roma,2017-07-21,23:45
+4,Cinema Nuova Roma,2017-07-28,23:45
+4,Supercinema Vittoria,2017-05-07,23:45
+4,Supercinema Vittoria,2017-05-14,23:45
+4,Supercinema Vittoria,2017-05-21,23:45
+4,Supercinema Vittoria,2017-05-28,23:45
+4,Supercinema Vittoria,2017-06-07,23:45
+4,Supercinema Vittoria,2017-06-14,23:45
+4,Supercinema Vittoria,2017-06-21,23:45
+4,Supercinema Vittoria,2017-06-28,23:45
+4,Supercinema Vittoria,2017-07-07,23:45
+4,Supercinema Vittoria,2017-07-14,23:45
+4,Supercinema Vittoria,2017-07-21,23:45
+4,Supercinema Vittoria,2017-07-28,23:45
