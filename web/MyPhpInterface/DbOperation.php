@@ -22,11 +22,10 @@ class DbOperation
     }
 
     public function checkVersion($v){
-        foreach($version as $x) {
-        	if($x=="170512_01"){
+        	if($version[0]=="170512_01"){
             	return true;
             }
-        } 
+        
         return false;
     }
 
