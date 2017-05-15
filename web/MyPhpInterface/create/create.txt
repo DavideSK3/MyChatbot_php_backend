@@ -30,8 +30,9 @@ CREATE TABLE messages (
 	time timestamp NOT NULL,
 	intent varchar(20),
 	restaurant int(11),
-	restaurant int(11),
+	movie int(11),
 	image varchar(200),
+	day varchar(12),
 	PRIMARY KEY(chatid,sender,time),
 	FOREIGN KEY(chatid,sender) REFERENCES chats(chatid,participant)
 );
@@ -97,3 +98,6 @@ ADD restaurant int(11);
 
 ALTER TABLE messages
 ADD cinema int(11);
+
+ALTER TABLE messages
+ADD day varchar(12);

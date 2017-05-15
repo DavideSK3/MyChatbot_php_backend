@@ -9,10 +9,11 @@ $intent = $_POST['intent'];
 $restaurant = $_POST['restaurant'];
 $cinema = $_POST['cinema'];
 $image = $_POST['image'];
+$day = $_POST['day'];
 
 $db = new DbOperation(); 
 
-$result = $db->sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema,$image);
+$result = $db->sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema,$image,$day);
 
 $response = array(); 
 

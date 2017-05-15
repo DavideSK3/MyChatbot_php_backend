@@ -194,7 +194,7 @@ class DbOperation
     }
 
     public function getMessages($chatid){
-        $stmt = $this->con->prepare("SELECT sender, content, time, intent, restaurant, cinema, image FROM messages where chatid=? ORDER BY time ASC");
+        $stmt = $this->con->prepare("SELECT sender, content, time, intent, restaurant, cinema, image, day FROM messages where chatid=? ORDER BY time ASC");
         $stmt->bind_param("s",$chatid);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -254,9 +254,9 @@ class DbOperation
         return $result["chatname"]; 
     }
 
-    public function sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema,$image){
-    	$stmt = $this->con->prepare("INSERT INTO messages (chatid,sender,content,intent,restaurant,cinema,image) VALUES (?,?,?,?,?,?,?) ");
-    	$stmt->bind_param("sssssss",$chatid,$sender,$content,$intent,$restaurant,$cinema,$image);
+    public function sendMessage($chatid,$sender,$content,$intent,$restaurant,$cinema,$image,$day){
+    	$stmt = $this->con->prepare("INSERT INTO messages (chatid,sender,content,intent,restaurant,cinema,image) VALUES (?,?,?,?,?,?,?,?) ");
+    	$stmt->bind_param("ssssssss",$chatid,$sender,$content,$intent,$restaurant,$cinema,$image,$day);
         if($stmt->execute()){
             $this->updateChatTime($chatid);
         	return 1;
