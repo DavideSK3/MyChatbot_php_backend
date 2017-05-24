@@ -21,7 +21,7 @@ class DbOperation
     }
 
     public function checkVersion($v){
-    	$version = array(1=>"2.1_S170516",2=>"test_0",3=>"test_1",4=>"test_2",5=>"test_3",6=>"test_4",7=>"test_5",8=>"test_6",9=>"known_testers");
+    	$version = array(1=>"2.1_S170516",2=>"test_0dis",3=>"test_1dis",4=>"test_2dis",5=>"test_3",6=>"test_4",7=>"test_5",8=>"test_6",9=>"known_testers");
     	for($i = 1; $i <= count($version); $i++){
         	if($version[$i]==$v){
             	return true;
